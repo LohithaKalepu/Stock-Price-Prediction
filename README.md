@@ -18,6 +18,7 @@ Lohitha Kalepu, Dylan Toriello, Dhruv Oza, Ryan Ryu, Emmanuelna Surpris
 ---
 
 ## Repository Structure
+```
 EDACode
   ACFPACF.py                           # ACF and PACF plots for time series analysis
   ACFPACFTests.py                      # Statistical tests related to ACF/PACF
@@ -84,3 +85,4 @@ GOOGL_Pipeline
 SentimentData
   Ingestion.py                         # Sentiment data ingestion script
   stock_sentiment_history(1).csv       # Final Sentiment Score CSV
+```
