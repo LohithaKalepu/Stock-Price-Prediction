@@ -2,13 +2,13 @@
 ## Project Overview
 
 This project builds an end-to-end pipeline that:
-- Collects and engineers financial features from 20 years of OHLCV data (Yahoo Finance)
-- Generates daily sentiment scores from financial news using FinBERT (MarketAUX API, 2022–2025)
-- Trains and evaluates ML and DL models using a rolling 5-year window strategy
-- Tests early fusion and late fusion strategies for combining financial and sentiment signals
-- Selects the best ensemble model based on Directional Accuracy and Sharpe Ratio
+- Collects and engineers financial features from 20 years of OHLCV data (Yahoo Finance) 
+- Generates daily sentiment scores from financial news using FinBERT (MarketAUX API, 2022–2025) 
+- Trains and evaluates ML and DL models using a rolling window strategy 
+- Tests early fusion and late fusion strategies for combining financial and sentiment signals 
+- Selects the best ensemble model based on Directional Accuracy and Sharpe Ratio 
 
-**Best Model:** TFT + TCN + XGBoost (Early Fusion, Simple Average)  
+**Best Model:** TFT + CNN_LSTM + XGBoost (Early Fusion, Simple Average)  
 **Directional Accuracy:** 56.4% | **Sharpe Ratio:** 1.69
 
 ---
@@ -18,6 +18,10 @@ Lohitha Kalepu, Dylan Toriello, Dhruv Oza, Ryan Ryu, Emmanuelna Surpris
 ---
 
 ## Repository Structure
+
+NOTE: Though the earlier analyses like EDA and train/test split strategy trail and errors are performed on the 20 years stock data, the actual prediction scope of this project is restricted to GOOGL stock from 2022-2025 because of limited sentiment data-- we only selected GOOL stock across a small time period to ensure fair comparision in our pipeline. Further changes in this project will include 5 more stocks with more years worth of data. 
+
+Please refer to the following structure to navigate through this repo--
 ```
 EDACode
   ACFPACF.py                           # ACF and PACF plots for time series analysis
