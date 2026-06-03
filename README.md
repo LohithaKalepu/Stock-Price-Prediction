@@ -1,5 +1,7 @@
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-## Project Overview
+## 🖥️ Project Overview
 
 This project builds an end-to-end pipeline that:
 - Collects and engineers financial features from 20 years of OHLCV data (Yahoo Finance) 
@@ -12,14 +14,14 @@ This project builds an end-to-end pipeline that:
 **Directional Accuracy:** 56.4% | **Sharpe Ratio:** 1.69
 
 ---
-## Team
+## 👏 Team
 Lohitha Kalepu, Dylan Toriello, Dhruv Oza, Ryan Ryu, Emmanuelna Surpris
 
 ---
 
-## Repository Structure
+## 📁 Repository Structure
 
-NOTE: Though the earlier analyses like EDA and train/test split strategy trail and errors are performed on the 20 years stock data, the actual prediction scope of this project is restricted to GOOGL stock from 2022-2025 because of limited sentiment data-- we only selected GOOL stock across a small time period to ensure fair comparision in our pipeline. Further changes in this project will include 5 more stocks with more years worth of data. 
+NOTE: Though the earlier analyses like EDA and train/test split strategy trail and errors are performed on the 20 years stock data, the actual prediction scope of this project is restricted to GOOGL stock from 2022-2025 because of limited sentiment data-- we only selected GOOL stock across a small time period to ensure fair comparision in our pipeline. Extending the pipeline to additional tickers and longer time horizons is a natural next step.
 
 Please refer to the following structure to navigate through this repo--
 ```
@@ -90,3 +92,13 @@ SentimentData
   Ingestion.py                         # Sentiment data ingestion script
   stock_sentiment_history(1).csv       # Final Sentiment Score CSV
 ```
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/LohithaKalepu/Stock-Price-Prediction.git
+cd Stock-Price-Prediction
+pip install pandas numpy scikit-learn torch transformers yfinance plotly jupyter
+```
+
+Start with `FinDataPreprocessing/Stock_data_collection.ipynb`, then follow the folder order: preprocessing → EDA → `GOOGL_Pipeline`.
